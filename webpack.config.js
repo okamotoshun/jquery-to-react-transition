@@ -2,15 +2,15 @@ const path = require('path')
 
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
-  entry: './src/app.js',
+  entry: './app.ts',
   output: {
-    filename: 'main.js',
+    filename: 'main.ts',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(j|t)s$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',

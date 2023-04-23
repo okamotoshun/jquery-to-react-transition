@@ -8,11 +8,18 @@
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/jquery": "^3.5.16",
     "babel-loader": "^9.1.2",
+    "typescript": "^5.0.4",
     "webpack": "^5.80.0",
     "webpack-cli": "^5.0.2"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint:ts": "tsc --noEmit"
+  },
+  "dependencies": {
+    "jquery": "^3.6.4"
   }
 }
